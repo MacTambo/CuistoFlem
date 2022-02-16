@@ -8,7 +8,6 @@ public class Connect {
     public Connection connect() {
 
         try {
-
             String url = "jdbc:mysql://localhost:3306/cuistoflem?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
             String user = "root";
             String password = "toor";

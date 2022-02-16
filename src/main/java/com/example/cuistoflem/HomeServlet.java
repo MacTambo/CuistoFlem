@@ -12,6 +12,7 @@ public class HomeServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //fill les select
         //affichage vueHome tel quel
+        request.getRequestDispatcher("vueHome.jsp").forward(request, response);
     }
 
     @Override
@@ -23,5 +24,5 @@ public class HomeServlet extends HttpServlet {
         //renvoi de la vue
     }
 
-    
+
 }
