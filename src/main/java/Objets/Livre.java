@@ -1,12 +1,11 @@
-package com.example.cuistoflem;
+package Objets;
 
-import connectDb.Connect;
+import Objets.Recette;
 
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
-import java.util.Locale;
+import java.util.stream.Stream;
 
 public class Livre {
 
@@ -53,5 +52,19 @@ public class Livre {
         this.index = index;
     }
 
+    public List<String> getAllIngredients(){
+        List<String> list1 = new ArrayList<>();
+        List<String> list = new ArrayList<>();
+        for(int i=0; i<livre.size();i++){
+            list.add(livre.get(i).getIngredients());
+        }
 
+
+        System.out.println(list);
+        return list;
+    }
+
+    public Stream stream() {
+        return livre.stream();
+    }
 }

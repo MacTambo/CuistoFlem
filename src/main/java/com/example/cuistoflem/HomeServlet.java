@@ -10,11 +10,18 @@ import java.io.IOException;
 public class HomeServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        //fill les select
+        //affichage vueHome tel quel
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        //récup inputs utilisateur
+        //programme Cuisto
+        //return Cuisto
+        //ajout attributs a ma vue
+        //renvoi de la vue
     }
+
+    
 }
