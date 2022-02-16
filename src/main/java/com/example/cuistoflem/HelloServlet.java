@@ -1,6 +1,8 @@
 package com.example.cuistoflem;
 
 import java.io.*;
+import java.util.Collections;
+import java.util.Enumeration;
 
 import connectDb.Connect;
 import jakarta.servlet.http.*;
@@ -24,6 +26,8 @@ public class HelloServlet extends HttpServlet {
         out.println("</body></html>");
         Connect connect = new Connect();
         connect.connect();
+        Livre livre = new Livre();
+        System.out.println(livre.getRecette(1).getNom());
     }
 
     public void destroy() {

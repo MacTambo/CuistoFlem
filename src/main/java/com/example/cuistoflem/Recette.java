@@ -1,5 +1,7 @@
 package com.example.cuistoflem;
 
+import connectDb.Connect;
+
 public class Recette {
     String nom;
     int tempsprepa;
@@ -13,6 +15,7 @@ public class Recette {
         this.ingredients = ingredients;
         this.img = img;
         this.texte = texte;
+
     }
 
     public String getNom() {
