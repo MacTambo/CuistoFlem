@@ -22,6 +22,7 @@ public class HomeServlet extends HttpServlet {
         //return Cuisto
         //ajout attributs a ma vue
         //renvoi de la vue
+        request.getRequestDispatcher("vueLivre.jsp").forward(request, response);
     }
 
 

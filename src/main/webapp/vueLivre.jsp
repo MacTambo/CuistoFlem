@@ -8,9 +8,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Recettes</title>
+    <link rel='stylesheet' type='text/css' href='vueLivre.css'/>
 </head>
+<center>
 <body>
-
+<h1>AVEC TON STOCK, TU PEUX TE FAIRE :</h1>
 </body>
+</center>
 </html>

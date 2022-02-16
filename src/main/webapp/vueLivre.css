@@ -1,0 +1,49 @@
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+body {
+    background: linear-gradient(35deg, #ffb800, #d0b577);
+}
+
+select {
+    margin-top: 150px;
+    appearance: none;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    width: 20em;
+    height: 3em;
+    padding: 0 4em 0 1em;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg) no-repeat right 0.8em center / 1.4em,
+    black;
+    color: white;
+    border-radius: 100px;
+    box-shadow: 1px 4px 10px 1px white;
+}
+
+option {
+    color: inherit;
+    background-color: #320a28;
+}
+
+h1{
+    color: white;
+    margin-top: 20px;
+    text-shadow: black;
+    font-family: 'Lato',sans-serif;
+    font-size: xxx-large;
+    text-shadow: 1px 4px 10px 1px black;
+}
+
+input[type=submit]{
+    display: block;
+    margin: 20px auto 0;
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    color: #eee;
+    font-weight: 700;
+    background: white;
+    color: #ffb800;
+    box-shadow: 1px 4px 10px 1px black;
+}
