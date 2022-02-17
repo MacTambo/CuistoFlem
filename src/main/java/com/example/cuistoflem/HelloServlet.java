@@ -28,6 +28,7 @@ public class HelloServlet extends HttpServlet {
         Livre livre = new Livre();
         System.out.println(livre.getRecette(1).getNom());
         livre.getAllIngredients();
+        System.out.println(livre.getDropdowns());
     }
 
     public void destroy() {

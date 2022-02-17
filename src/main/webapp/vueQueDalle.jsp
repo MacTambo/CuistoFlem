@@ -9,22 +9,18 @@
 <html>
 <head>
     <title>Recettes</title>
-    <link rel='stylesheet' type='text/css' href='vueLivre.css'/>
+    <link rel='stylesheet' type='text/css' href='vueQueDalle.css'/>
 </head>
 <center>
     <body>
     <h1>AVEC TON STOCK, TU PEUX TE FAIRE :</h1>
     <div id="title">
-    <h1 style="color: black">${nom}</h1>
+        <h1 style="color: black">QUE DALLE.</h1>
     </div>
     <div id="recipe">
-        <img src=${img}>
-        <div id="components">
-            <h2 style="color: #a90000">Temps de préparation: </h2><h2>${tempsPrepa} minutes.</h2>
-            <br>
-            <h2 style="color: #a90000">Ingredients: </h2><h2>${ingredients}.</h2>
-            <br><br>
-        <h2>${texte}</h2></div>
+        <h2 style="color: black">Abandonne ton projet de cuisine et commande un tacos.   </h2>
+        <br><br>
+        <a href="https://o-tacos.com/en/menu">https://o-tacos.com/en/menu</a>
     </div>
     </body>
 </center>

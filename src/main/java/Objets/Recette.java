@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Recette {
     String nom;
-    int tempsprepa;
+    Integer tempsprepa;
     String ingredients;
     String img;
     String texte;
@@ -41,7 +41,7 @@ public class Recette {
         return ingredients;
     }
 
-    public List<String> getIngredientList(){
+    public List<String> getIngredientList() {
         List<String> list = new ArrayList<>();
         String sep = ", ";
         String elements[] = ingredients.split(sep);

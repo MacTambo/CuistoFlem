@@ -13,6 +13,15 @@
         <element id="directory" name="classes">
           <element id="module-output" name="CuistoFlem" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.22" />
+          <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.11.4" />
+          <element id="library" level="project" name="Maven: org.glassfish.web:jakarta.servlet.jsp.jstl:2.0.0-M1" />
+          <element id="library" level="project" name="Maven: jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:2.0.0-RC1" />
+          <element id="library" level="project" name="Maven: jakarta.el:jakarta.el-api:4.0.0-RC1" />
+          <element id="library" level="project" name="Maven: jakarta.xml.bind:jakarta.xml.bind-api:3.0.0-RC1" />
+          <element id="library" level="project" name="Maven: jakarta.activation:jakarta.activation-api:2.0.0-rc1" />
+        </element>
       </element>
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/CuistoFlem-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
