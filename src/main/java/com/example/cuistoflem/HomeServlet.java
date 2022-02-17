@@ -60,7 +60,7 @@ public class HomeServlet extends HttpServlet {
             String nom = laRecette.getNom();
             Integer tempsPrepaInt = laRecette.getTempsprepa();
             String tempsPrepa = tempsPrepaInt.toString();
-            String ingredients = laRecette.getIngredients();
+            String ingredients = laRecette.getIngredients().replaceAll("_"," ");
             String texte = laRecette.getTexte();
             String img = laRecette.getImg();
 
