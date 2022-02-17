@@ -70,6 +70,17 @@ img {
     overflow: hidden;
 }
 
+#warning{
+    position: relative;
+    background: #1d5d2f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+    margin: 1rem;
+    overflow: hidden;
+}
+
 #title{
     position: relative;
     background: #F2E9DE;

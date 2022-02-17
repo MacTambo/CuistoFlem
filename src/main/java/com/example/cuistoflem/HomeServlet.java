@@ -51,7 +51,26 @@ public class HomeServlet extends HttpServlet {
                 }
             }
         }
-        //Set arrtibuts & renvoi de la vue
+        if (recettesAff.isEmpty()) {
+            for (Recette recette : livre.getLivre()) {
+                if (recette.getIngredients().contains(ingredient1)) {
+                    if (recette.getIngredients().contains(ingredient2)) {
+                            recettesAff.add(recette);
+                            ingredient3 = " ";
+                    }
+                }
+            }
+        }
+        if (recettesAff.isEmpty()) {
+            for (Recette recette : livre.getLivre()) {
+                if (recette.getIngredients().contains(ingredient1)) {
+                        recettesAff.add(recette);
+                        ingredient3 =" ";
+                        ingredient2 =" ";
+                }
+            }
+        }
+        //Set attributs & renvoi de la vue
         if (recettesAff.isEmpty()) {
             request.getRequestDispatcher("vueQueDalle.jsp").forward(request, response);
         } else {
@@ -70,6 +89,9 @@ public class HomeServlet extends HttpServlet {
             request.setAttribute("ingredients", ingredients);
             request.setAttribute("texte", texte);
             request.setAttribute("img", img);
+            request.setAttribute("ingredient1", ingredient1);
+            request.setAttribute("ingredient2", ingredient2);
+            request.setAttribute("ingredient3", ingredient3);
 
             request.getRequestDispatcher("vueLivre.jsp").forward(request, response);
         }
