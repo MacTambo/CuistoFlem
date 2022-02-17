@@ -53,13 +53,10 @@ public class Livre {
     }
 
     public List<String> getAllIngredients(){
-        List<String> list1 = new ArrayList<>();
         List<String> list = new ArrayList<>();
         for(int i=0; i<livre.size();i++){
             list.add(livre.get(i).getIngredients());
         }
-
-
         System.out.println(list);
         return list;
     }

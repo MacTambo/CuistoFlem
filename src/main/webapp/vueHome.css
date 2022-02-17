@@ -1,7 +1,10 @@
 @import url(//fonts.googleapis.com/css?family=Lato:300:400);
 
 body {
-    background: linear-gradient(35deg, #ffb800, #d0b577);
+    background: url("checkered-napkin-and-ingredients-on-kitchen-worktop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 select {
