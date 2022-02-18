@@ -23,8 +23,6 @@ public class HomeServlet extends HttpServlet {
         livre.getAllIngredients();
         List dropdown = livre.getDropdowns();
         request.setAttribute("dropdown", dropdown);
-        System.out.println(dropdown);
-        System.out.println("prout");
         //affichage vueHome tel quel
         request.getRequestDispatcher("vueHome.jsp").forward(request, response);
     }
