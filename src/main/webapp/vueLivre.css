@@ -1,10 +1,16 @@
 @import url(//fonts.googleapis.com/css?family=Lato:300:400);
+@import url(//fonts.googleapis.com/css?family=Karla:300:400);
 
 body {
     background: url("checkered-napkin-and-ingredients-on-kitchen-worktop.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'Karla',sans-serif;
+}
+
+svg{
+    margin-top: 5px;
 }
 
 select {
@@ -31,9 +37,15 @@ h1{
     color: white;
     margin-top: 20px;
     text-shadow: black;
-    font-family: 'Lato',sans-serif;
+    font-family: 'Karla',sans-serif;
     font-size: xxx-large;
     text-shadow: 1px 4px 10px 1px black;
+}
+
+h2 {
+    display: flex;
+    display: flex;
+    align-items: self-end;
 }
 
 input[type=submit]{
@@ -52,48 +64,58 @@ input[type=submit]{
 
 
 img {
-    height: auto;
-    width: auto;
-    max-width: 30%;
-    max-height: 100%;
-    display: flex;
-    margin-left: 20px;
+    height: 105vh;
+    width: 80vh;
+    object-fit: cover;
 }
 
 #recipe{
     position: relative;
-    background: #F2E9DE;
+    background: rgba(242, 233, 222, 0.84);
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     margin: 1rem;
     overflow: hidden;
+    border-radius: 25px;
+    font-family: 'Karla',sans-serif;
 }
 
 #warning{
     position: relative;
-    background: #1d5d2f;
+    background: rgba(0, 0, 0, 0.76);
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 10vh;
     margin: 1rem;
     overflow: hidden;
+    border-radius: 25px;
 }
 
 #title{
     position: relative;
-    background: #F2E9DE;
+    background: rgba(242, 233, 222, 0.84);
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 10vh;
     margin: 1rem;
     overflow: hidden;
+    border-radius: 25px;
 }
 
 #components{
     margin-left: 30px;
     margin-right: 30px;
+}
+
+div.littlelabel{
+    display: flex;
+    align-items: center;
+}
+
+svg{
+    margin-right: 10px;
 }

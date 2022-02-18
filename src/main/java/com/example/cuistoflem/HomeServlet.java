@@ -78,7 +78,7 @@ public class HomeServlet extends HttpServlet {
             Integer tempsPrepaInt = laRecette.getTempsprepa();
             String tempsPrepa = tempsPrepaInt.toString();
             String ingredients = laRecette.getIngredients().replaceAll("_"," ");
-            String texte = laRecette.getTexte();
+            String texte = laRecette.getTexte().replace(". ",". <br><br>");
             String img = laRecette.getImg();
 
             //ajout attributs a ma vue
