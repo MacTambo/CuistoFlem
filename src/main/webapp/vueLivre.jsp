@@ -45,6 +45,9 @@
         <h2>${texte}</h2></div>
 </div>
 <c:if test="${not empty nom2}">
+    <div id="title2">
+        <h1 style="color: black">${nom2}</h1>
+    </div>
 <div id="recipe2">
     <img src=${img2}>
     <div id="components2">
@@ -71,6 +74,9 @@
 </div>
 </c:if>
 <c:if test="${not empty nom3}">
+    <div id="title3">
+        <h1 style="color: black">${nom3}</h1>
+    </div>
 <div id="recipe3">
     <img src=${img3}>
     <div id="components3">

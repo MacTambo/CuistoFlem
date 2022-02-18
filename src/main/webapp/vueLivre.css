@@ -8,6 +8,8 @@ body {
     background-size: cover;
     font-family: 'Karla',sans-serif;
     background-attachment: fixed;
+    margin-right: 20vh;
+    margin-left: 20vh;
 }
 
 svg{
@@ -122,6 +124,30 @@ img {
 }
 
 #title{
+    position: relative;
+    background: rgba(242, 233, 222, 0.84);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+    margin: 1rem;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+#title2{
+    position: relative;
+    background: rgba(242, 233, 222, 0.84);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+    margin: 1rem;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+#title3{
     position: relative;
     background: rgba(242, 233, 222, 0.84);
     display: flex;
