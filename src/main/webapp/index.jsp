@@ -10,5 +10,6 @@
 <br/>
 <a href="hello-servlet">Testeur</a><br>
 <a href="HomeServlet">CuistoFlem'</a>
+<a href="loading.jsp">loading</a>
 </body>
 </html>

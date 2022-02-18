@@ -18,11 +18,13 @@ public class HomeServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Connect connect = new Connect();
         connect.connect();
+
         //fill les select
         Livre livre = new Livre();
         livre.getAllIngredients();
         List dropdown = livre.getDropdowns();
         request.setAttribute("dropdown", dropdown);
+        
         //affichage vueHome tel quel
         request.getRequestDispatcher("vueHome.jsp").forward(request, response);
     }

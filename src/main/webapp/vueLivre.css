@@ -1,6 +1,19 @@
 @import url(//fonts.googleapis.com/css?family=Lato:300:400);
 @import url(//fonts.googleapis.com/css?family=Karla:300:400);
 
+@media (max-width: 768px) {
+    #recipe{
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
 body {
     background: url("checkered-napkin-and-ingredients-on-kitchen-worktop.jpg");
     background-position: center;
