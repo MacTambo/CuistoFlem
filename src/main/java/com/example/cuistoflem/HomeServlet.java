@@ -53,8 +53,8 @@ public class HomeServlet extends HttpServlet {
             for (Recette recette : livre.getLivre()) {
                 if (recette.getIngredients().contains(ingredient1)) {
                     if (recette.getIngredients().contains(ingredient2)) {
-                            recettesAff.add(recette);
-                            ingredient3 = " ";
+                        recettesAff.add(recette);
+                        ingredient3 = " ";
                     }
                 }
             }
@@ -62,9 +62,9 @@ public class HomeServlet extends HttpServlet {
         if (recettesAff.isEmpty()) {
             for (Recette recette : livre.getLivre()) {
                 if (recette.getIngredients().contains(ingredient1)) {
-                        recettesAff.add(recette);
-                        ingredient3 =" ";
-                        ingredient2 =" ";
+                    recettesAff.add(recette);
+                    ingredient3 = " ";
+                    ingredient2 = " ";
                 }
             }
         }
@@ -74,10 +74,12 @@ public class HomeServlet extends HttpServlet {
         } else {
             Recette laRecette = recettesAff.get(0);
             System.out.println(laRecette.getNom());
+            int taille = recettesAff.size();
+            System.out.println("taille liste résultats : "+ recettesAff.size());
             String nom = laRecette.getNom();
             Integer tempsPrepaInt = laRecette.getTempsprepa();
             String tempsPrepa = tempsPrepaInt.toString();
-            String ingredients = laRecette.getIngredients().replaceAll("_"," ");
+            String ingredients = laRecette.getIngredients().replaceAll("_", " ");
             String texte = laRecette.getTexte().replace(". ",". <br><br>");
             String img = laRecette.getImg();
 
@@ -90,6 +92,41 @@ public class HomeServlet extends HttpServlet {
             request.setAttribute("ingredient1", ingredient1);
             request.setAttribute("ingredient2", ingredient2);
             request.setAttribute("ingredient3", ingredient3);
+            //vue recette 2
+            if (recettesAff.size() >= 2) {
+                Recette laRecette2 = recettesAff.get(1);
+                String nom2 = laRecette2.getNom();
+                Integer tempsPrepaInt2 = laRecette2.getTempsprepa();
+                String tempsPrepa2 = tempsPrepaInt2.toString();
+                String ingredients2 = laRecette2.getIngredients().replaceAll("_", " ");
+                String texte2 = laRecette2.getTexte().replace(". ",". <br><br>");
+                String img2 = laRecette2.getImg();
+                request.setAttribute("nom2", nom2);
+                request.setAttribute("tempsPrepa2", tempsPrepa2);
+                request.setAttribute("ingredients2", ingredients2);
+                request.setAttribute("texte2", texte2);
+                request.setAttribute("img2", img2);
+
+                System.out.println(laRecette2.getNom());
+
+                if (recettesAff.size() >= 3) {
+                    //vue recette 3
+                    Recette laRecette3 = recettesAff.get(2);
+                    String nom3 = laRecette3.getNom();
+                    Integer tempsPrepaInt3 = laRecette3.getTempsprepa();
+                    String tempsPrepa3 = tempsPrepaInt3.toString();
+                    String ingredients3 = laRecette3.getIngredients().replaceAll("_", " ");
+                    String texte3 = laRecette3.getTexte().replace(". ",". <br><br>");
+                    String img3 = laRecette3.getImg();
+                    request.setAttribute("nom3", nom3);
+                    request.setAttribute("tempsPrepa3", tempsPrepa3);
+                    request.setAttribute("ingredients3", ingredients3);
+                    request.setAttribute("texte3", texte3);
+                    request.setAttribute("img3", img3);
+
+                    System.out.println(laRecette3.getNom());
+                }
+            }
 
             request.getRequestDispatcher("vueLivre.jsp").forward(request, response);
         }
