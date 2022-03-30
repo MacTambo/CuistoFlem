@@ -1,7 +1,5 @@
 package Objets;
 
-import connectDb.Connect;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -41,15 +39,15 @@ public class Recette {
         return ingredients;
     }
 
-    public List<String> getIngredientList() {
-        List<String> list = new ArrayList<>();
-        String sep = ", ";
-        String elements[] = ingredients.split(sep);
-        for (int i = 0; i < ingredients.length(); i++) {
-            list.add(elements[i]);
-        }
-        return list;
-    }
+//    public List<String> getIngredientList() {
+//        List<String> list = new ArrayList<>();
+//        String sep = ", ";
+//        String elements[] = ingredients.split(sep);
+//        for (int i = 0; i < ingredients.length(); i++) {
+//            list.add(elements[i]);
+//        }
+//        return list;
+//    }
 
     public void setIngredients(String ingredients) {
         this.ingredients = ingredients;

@@ -4,12 +4,10 @@
 <head>
     <title>JSP - Hello World</title>
 </head>
-<body>
+<body style="background: black">
 <h1><%= "Hello World!" %>
 </h1>
 <br/>
-<a href="hello-servlet">Testeur</a><br>
-<a href="HomeServlet">CuistoFlem'</a>
-<a href="loading.jsp">loading</a>
+<a href="loading.jsp" style="color: #a90000">CuistoFlem'</a>
 </body>
 </html>
